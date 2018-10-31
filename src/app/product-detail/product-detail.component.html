@@ -1,0 +1,10 @@
+<div>
+  <h1>Page 3</h1>
+  <a  [routerLink]="['/page3',':index']" style="color:black">	1page4 </a>
+  <a  [routerLink]="['/page3',{outlets:{editsection:':index/edit'}}]" style="color:black">	2page5 </a>
+  <a routerLink="/" style="color:red">Go To Home</a>
+
+  <router-outlet></router-outlet>
+  <router-outlet name="editsection"></router-outlet>
+
+</div>
